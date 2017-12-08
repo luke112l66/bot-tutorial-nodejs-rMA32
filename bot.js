@@ -23,9 +23,9 @@ function respond() {
     postMessage(cool());
     this.res.end();
   }
-  else if(request.text && botRegexSlut.test(request.text)) {
+  else if(request.text && botDaddy.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
+    postMessage("http://daddyleagues.com/SGN");
     this.res.end();
   } 
   else if(request.text && botRegexProp.test(request.text)) {
@@ -103,14 +103,14 @@ function respond() {
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
     
-    postMessage("http://daddyleagues.com/nml18/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/SGN/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/nml18/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/SGN/players?name="+rep+"&position=all&team=all");
     
     this.res.end();
   }  
